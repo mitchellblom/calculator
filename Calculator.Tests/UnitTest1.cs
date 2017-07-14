@@ -32,6 +32,22 @@ namespace Calculator.Tests
             Assert.Equal(difference, 25);
         }
 
+        [Fact]
+        public void MultiplyTwoIntegers()
+        {
+            int product = _calculator.Multiply(4, 2);
+
+            Assert.Equal(product, 8);
+        }
+
+        [Fact]
+        public void DivideTwoIntegers()
+        {
+            int product = _calculator.Divide(4, 2);
+
+            Assert.Equal(product, 2);
+        }
+
     }
 
 }
