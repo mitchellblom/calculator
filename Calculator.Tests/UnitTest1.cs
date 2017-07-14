@@ -1,4 +1,6 @@
 using System;
+using System.Linq;
+using System.Collections.Generic;
 using Xunit;
 
 namespace Calculator.Tests
@@ -21,5 +23,15 @@ namespace Calculator.Tests
             // We are asserting that the output should be this
             Assert.Equal(sum, 83);
         }
+
+        [Fact]
+        public void SubtractTwoIntegers()
+        {
+            int difference = _calculator.Subtract(54, 29);
+
+            Assert.Equal(difference, 25);
+        }
+
     }
+
 }

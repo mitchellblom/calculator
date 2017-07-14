@@ -6,7 +6,21 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
         }
     }
+
+    public class Calculator
+    {
+        public int Add(int int1, int int2)
+        {
+            return int1 + int2;
+        }
+
+        public int Subtract(int int1, int int2)
+        {
+            return int1 - int2;
+        }
+    };
+    
 }
